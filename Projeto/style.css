@@ -1,0 +1,120 @@
+@charset "ETF-8"
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(#7871aa, #4E5283);
+    background-attachment: fixed;
+
+}
+
+img {
+    max-width: 7vw;
+    display: flex;
+}
+
+nav {
+    margin: auto;
+    max-width: 90%;
+    padding: 1em 2em 1.25em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+    border-bottom: 3px solid #4f91bdce;
+}
+
+.nav-logo {
+    max-width: 100px;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 0 0 0 0;
+}
+
+.nav-logo:hover {
+    transform: translateY(-0.06em) translateX(0.1em);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 6vw;
+    font-weight: 650;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 140%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.4em;
+    text-decoration: none;
+    color: #202020;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 5%;
+    left: -7%;
+    direction: revert;
+    background-color: #AA9FB1;
+    transition: all 0.45s ease;
+}
+
+.link a:hover::after {
+    width: 115%;
+}
+
+.btn {
+    font-size: 90% ;
+    font-weight: 750;
+    padding: 1.2% 1.2%;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: #58528a;
+    transition: all 0.5s ease 0s;
+}
+
+.btn:hover {
+    background-color: #CCA7A2;
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
+}
+
+header {
+    margin-top: 6rem;
+    margin-left: 8rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 15%;
+}
+
+.content {
+    padding: 20px 20px 20px 20px;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    font-size: x-large;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content-title {
+    padding-bottom: 2rem;
+}
+
