@@ -60,6 +60,7 @@ nav {
     justify-content: space-evenly;
     display: flex;
     gap: 2rem;
+    background-color: black;
 }
 
 .icon {
