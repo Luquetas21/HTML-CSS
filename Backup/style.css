@@ -17,6 +17,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(#7871aa, #4E5283);
     background-attachment: fixed;
+
 }
 
 img {
@@ -24,8 +25,10 @@ img {
 }
 
 nav {
-    max-width: 1200px;
-    margin: 3rem auto 4rem auto;
+    margin: auto;
+    max-width: 80vw;
+    margin-top: 1.5rem;
+    padding: 1em 2em 1.25em 2em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -33,7 +36,7 @@ nav {
 }
 
 .nav-logo {
-    max-width: 9%;
+    max-width: 10%;
     min-width: 70px;
     display: flex;
     transition: all 0.5s ease;
@@ -115,17 +118,21 @@ nav {
 }
 
 header {
-    position: relative;
-    margin: auto;
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-    max-width: 80%;
-    margin: auto;
-    padding: 5rem 2rem;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+    gap: 15%;
 }
- header .content p {
-    padding: 0 1rem 2rem 0;
- }
+
+.content {
+    padding: 1rem 1rem;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    font-size: x-large;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content-title {
+    padding-bottom: 2rem;
+}
+
