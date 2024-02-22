@@ -1,4 +1,4 @@
-@charset "ETF-8"
+@charset "UTF-8"
 
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
@@ -128,4 +128,10 @@ header {
 }
  header .content p {
     padding: 0 1rem 2rem 0;
+ }
+
+ @keyframes animacao {
+    from {
+        
+    }
  }

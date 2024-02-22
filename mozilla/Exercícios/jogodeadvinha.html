@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Jogo de Adivinha</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      
+      .form input[type="number"] {
+        width: 200px;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Adivinha</h1>
+    <p class="paras">Seja Bem Vindo(a)</p>
+    <button class="usuario">Alterar Usuário</button>
+
+    <p>Nós selecionamos um número aleatório entre 1 e 100. Veja se você consegue acertar em 10 tentativas ou menos. Nós diremos se o seu palpite é maior ou menor.</p>
+
+    <div class="form">
+      <label for="campoPalpite">Faça seu palpite: </label>
+      <input type="number" min="1" max="100" required id="campoPalpite" class="campoPalpite">
+      <input type="submit" value="Enviar Palpite" class="envioPalpite">
+    </div>
+
+    <div class="resultadoParas">
+      <p class="palpites"></p>
+      <p class="ultimoResultado"></p>
+      <p class="baixoOuAlto"></p>
+    </div>
+
+    <script src="../scripts/mainadivinha.js"></script>
+  </body>
+</html>
